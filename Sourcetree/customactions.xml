@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCustomAction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomAction>
+    <Caption>View commit on GitLab</Caption>
+    <Target>powershell.exe</Target>
+    <Parameters>-noprofile -file C:\SourcetreeScripts\view-commit-on-gitlab.ps1 $REPO $SHA</Parameters>
+    <OpenInSeparateWindow>false</OpenInSeparateWindow>
+    <ShowFullOutput>false</ShowFullOutput>
+    <IsSilent>true</IsSilent>
+  </CustomAction>
+  <CustomAction>
+    <Caption>View file on GitLab</Caption>
+    <Target>powershell.exe</Target>
+    <Parameters>-noprofile -file C:\SourcetreeScripts\view-file-on-gitlab.ps1 $REPO $BRANCH $FILE</Parameters>
+    <OpenInSeparateWindow>false</OpenInSeparateWindow>
+    <ShowFullOutput>false</ShowFullOutput>
+    <IsSilent>true</IsSilent>
+  </CustomAction>
+  <CustomAction>
+    <Caption>View file commit on GitLab</Caption>
+    <Target>powershell.exe</Target>
+    <Parameters>-noprofile -file C:\SourcetreeScripts\view-file-commit-on-gitlab.ps1 $REPO $SHA $FILE</Parameters>
+    <OpenInSeparateWindow>false</OpenInSeparateWindow>
+    <ShowFullOutput>false</ShowFullOutput>
+    <IsSilent>true</IsSilent>
+  </CustomAction>
+  <CustomAction>
+    <Caption>View repo on GitLab</Caption>
+    <Target>powershell.exe</Target>
+    <Parameters>-noprofile -file C:\SourcetreeScripts\view-repo-on-gitlab.ps1 $REPO</Parameters>
+    <OpenInSeparateWindow>false</OpenInSeparateWindow>
+    <ShowFullOutput>false</ShowFullOutput>
+    <IsSilent>true</IsSilent>
+  </CustomAction>
+  <CustomAction>
+    <Caption>Open repo in VS Code</Caption>
+    <Target>powershell.exe</Target>
+    <Parameters>-noprofile -file C:\SourcetreeScripts\open-folder-in-vs-code.ps1 $REPO</Parameters>
+    <OpenInSeparateWindow>false</OpenInSeparateWindow>
+    <ShowFullOutput>false</ShowFullOutput>
+    <IsSilent>true</IsSilent>
+  </CustomAction>
+  <CustomAction>
+    <Caption>Edit file in VS Code</Caption>
+    <Target>powershell.exe</Target>
+    <Parameters>-noprofile -file C:\SourcetreeScripts\open-file-in-vs-code.ps1 $FILE</Parameters>
+    <OpenInSeparateWindow>false</OpenInSeparateWindow>
+    <ShowFullOutput>false</ShowFullOutput>
+    <IsSilent>true</IsSilent>
+  </CustomAction>
+</ArrayOfCustomAction>
