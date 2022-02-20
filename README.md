@@ -19,9 +19,9 @@ A collection of powershell scripts implementing a selection of [Sourcetree](http
 
 ## Usage
 
-1. Create a directory called c:\SourcetreeScripts and copy all [.ps1 powershell script files](/powershell/) included in this repo to that directory
+1. Create a directory called c:\SourcetreeScripts and copy all [.ps1 powershell script files](/powershell/) included in this repo to that directory. Unblock each powershell script in file properties to make them runnable.
 2. Copy the [customactions.xml](/Sourcetree/customactions.xml) file to the `%LOCALAPPDATA%\Atlassian\SourceTree` directory
-3. In Sourcetree in each repository to be used with these scripts, add a new remote that points to the http url root of the repository in GitLab. This action saves the url to the remote in the repository local `.git/config` file.
+3. In Sourcetree in each repository to be used with these scripts, add a new remote called 'gitlab' that points to the http url root of the repository in GitLab. This action saves the url to the remote in the repository local `.git/config` file.
 
 ## Credits
 
